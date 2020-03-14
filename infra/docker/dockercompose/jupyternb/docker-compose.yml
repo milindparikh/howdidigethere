@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+    jupyternb:
+        image: custom-jupyter/minimal-notebook:r1    # jupyter/minimal-notebook
+        environment:
+            - JUPYTER_TOKEN=abcd
+        container_name: "jupyter-notebook"
+        ports:
+            - "8888:8888"
